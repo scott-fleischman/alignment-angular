@@ -1,30 +1,55 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+button.original {
+	font-family: gentium;
+	font-size: 16pt;
 }
-
-.menu:before {
-  content: "[";
+button.primary {
+	font-size: 16pt;
 }
-
-.menu:after {
-  content: "]";
+button.secondary {
+	font-size: 10pt;
 }
-
-.menu > li {
-  display: inline;
+div.original {
+	margin: 0;
+	padding: 0;
+	text-align: right;
 }
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+button.translation {
+	font-family: helvetica, sans-serif;
+	font-size: 16pt;
 }
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+div.translation {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+button.selected {
+	background-color: orange;
+}
+div.link {
+	margin-bottom: 1em;
+	border: solid orange 1px;
+	border-radius: 5px;
+}
+div.link-current {
+	background-color: orange;
+}
+div.link-original {
+	text-align: right;
+}
+div.link-kind {
+	text-align: center;
+}
+div.link-translation {
+	text-align: left;
+}
+button.link-original-word {
+	font-family: gentium;
+}
+button.link-translation-word {
+	font-family: helvetica, sans-serif;
+}
+button.link-kind {
+	font-family: helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: bold;
 }

@@ -1,29 +1,60 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="alignment">
 <head>
   <meta charset="utf-8">
-  <title>Text Alignment-AngularJS</title>
-  <link rel="stylesheet" href="css/bootstrap-min.css"/>
+  <title>Text Alignment—AngularJS</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
   <script src="lib/angular/angular.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+  <div ng-controller="VerseController" class="row">
+    <div class="col-sm-3">
+      <div ng-repeat="word in original" class="original">
+        <button
+          class="btn btn-default original"
+          ng-click="addWord('original', $index, $event)"
+          ng-disabled="disabled.original[$index]">{{ word.text }}</button>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div ng-repeat="link in links"
+          class="row link"
+          ng-class="currentLinkIndex === $index ? 'link-current' : null"
+          ng-click="selectLink($index)"
+          ng-init="linkIndex = $index">
+        <div class="link-original col-sm-5">
+          <div ng-repeat="wordIndex in link.original">
+            <button class="btn btn-default link-original-word"
+              ng-class="original[wordIndex].isAlt ? 'secondary' : 'primary'"
+              ng-click="removeWord('original', wordIndex, linkIndex, $event)">{{ original[wordIndex].text }}</button>
+          </div>
+        </div>
+        <div class="link-kind col-sm-2">
+          <button class="btn btn-default link-kind"
+            ng-click="changeLinkKind(linkIndex, $event)">{{ links[linkIndex].kind === 'assoc' ? '=' : '\u2248' }}</button>
+        </div>
+        <div class="link-translation col-sm-5">
+          <div ng-repeat="wordIndex in link.translation">
+            <button class="btn btn-default link-translation-word"
+              ng-class="translation[wordIndex].isAlt ? 'secondary' : 'primary'"
+              ng-click="removeWord('translation', wordIndex, linkIndex, $event)">{{ translation[wordIndex].text }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div ng-repeat="word in translation" class="translation">
+        <button 
+          class="btn btn-default translation"
+          ng-click="addWord('translation', $index, $event)"
+          ng-disabled="disabled.translation[$index]">{{ word.text }}</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

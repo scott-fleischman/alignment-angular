@@ -1,0 +1,71 @@
+﻿{
+	"original": [
+		{ "id": "wn.1", "text": "Οὕτως", "isAlt": true },
+		{ "id": "wn.2", "text": "γὰρ", "isAlt": false },
+		{ "id": "wn.3", "text": "ἠγάπησεν", "isAlt": false },
+		{ "id": "wn.4", "text": "ὁ", "isAlt": false },
+		{ "id": "wn.5", "text": "θεὸς", "isAlt": false },
+		{ "id": "wn.6", "text": "τὸν", "isAlt": false },
+		{ "id": "wn.7", "text": "κόσμον", "isAlt": false },
+		{ "id": "wn.8", "text": "ὥστε", "isAlt": false },
+		{ "id": "wn.9", "text": "τὸν", "isAlt": false },
+		{ "id": "wn.10", "text": "υἱὸν", "isAlt": false },
+		{ "id": "wn.11", "text": "τὸν", "isAlt": false },
+		{ "id": "wn.12", "text": "μονογενῆ", "isAlt": false },
+		{ "id": "wn.13", "text": "ἔδωκεν", "isAlt": false },
+		{ "id": "wn.14", "text": "ἵνα", "isAlt": false },
+		{ "id": "wn.15", "text": "πᾶς", "isAlt": false },
+		{ "id": "wn.16", "text": "ὁ", "isAlt": false },
+		{ "id": "wn.17", "text": "πιστεύων", "isAlt": false },
+		{ "id": "wn.18", "text": "εἰς", "isAlt": false },
+		{ "id": "wn.19", "text": "αὐτὸν", "isAlt": false },
+		{ "id": "wn.20", "text": "μὴ", "isAlt": false },
+		{ "id": "wn.21", "text": "ἀπόληται", "isAlt": false },
+		{ "id": "wn.22", "text": "ἀλλὰ", "isAlt": false },
+		{ "id": "wn.23", "text": "ἔχῃ", "isAlt": false },
+		{ "id": "wn.24", "text": "ζωὴν", "isAlt": false },
+		{ "id": "wn.25", "text": "αἰώνιον", "isAlt": false }
+	],
+	"translation": [
+		{ "id": "1", "text": "“", "isAlt": false }, 
+		{ "id": "2", "text": "For", "isAlt": false }, 
+		{ "id": "3", "text": "God", "isAlt": false }, 
+		{ "id": "4", "text": "so", "isAlt": false }, 
+		{ "id": "5", "text": "loved", "isAlt": false }, 
+		{ "id": "6", "text": "the", "isAlt": false }, 
+		{ "id": "7", "text": "world", "isAlt": false }, 
+		{ "id": "8", "text": ",", "isAlt": false }, 
+		{ "id": "9", "text": "that", "isAlt": false }, 
+		{ "id": "10", "text": "he", "isAlt": false }, 
+		{ "id": "11", "text": "gave", "isAlt": false }, 
+		{ "id": "12", "text": "his", "isAlt": false }, 
+		{ "id": "13", "text": "only", "isAlt": false }, 
+		{ "id": "14", "text": "Son", "isAlt": false }, 
+		{ "id": "15", "text": ",", "isAlt": false }, 
+		{ "id": "16", "text": "that", "isAlt": false }, 
+		{ "id": "17", "text": "whoever", "isAlt": false }, 
+		{ "id": "18", "text": "believes", "isAlt": false }, 
+		{ "id": "19", "text": "in", "isAlt": false }, 
+		{ "id": "20", "text": "him", "isAlt": false }, 
+		{ "id": "21", "text": "should", "isAlt": false }, 
+		{ "id": "22", "text": "not", "isAlt": false }, 
+		{ "id": "23", "text": "perish", "isAlt": false }, 
+		{ "id": "24", "text": "but", "isAlt": false }, 
+		{ "id": "25", "text": "have", "isAlt": false }, 
+		{ "id": "26", "text": "eternal", "isAlt": false }, 
+		{ "id": "27", "text": "life", "isAlt": false }, 
+		{ "id": "28", "text": ".", "isAlt": false }
+	],
+	"links": [
+		{
+			"kind": "assoc",
+			"original": ["wn.1"],
+			"translation": ["4"]
+		},
+		{
+			"kind": "idiom",
+			"original": ["wn.2"],
+			"translation": ["2"]
+		}
+	]
+}
